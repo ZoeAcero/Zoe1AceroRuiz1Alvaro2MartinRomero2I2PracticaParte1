@@ -1,0 +1,175 @@
+/*------------------------- CAMBIOS EN EL HEADER ------------------------------------------------*/
+
+header {
+    background-color: green;
+    padding: 10px;
+}
+
+header div { /* Cambiamos el color de fondo y pusimos flex para que los títulos estuvieran en la misma línea */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header div h1, header div h2 { /* Cambiamos el color de la fuente y pusimos flex-start para que no estuvieran los títulos centrados sino que estuvieran más arriba */
+    color: white;
+    align-self: flex-start;
+}
+
+
+
+/*------------------------- CAMBIOS EN EL BODY Y MAIN, MAS GENERALES --------------------------------------------------*/
+
+body { /* En el body le hemos quitado los margenes ya que sino los colores no se pegaban entre ellos y se quedaba un margen de color gris */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+
+
+/*------------------------ CAMBIOS EN EL NAV --------------------------------------------------*/
+
+nav {
+    flex: 0 0 250px; /* Anchura fija para el menú */
+    background-color: lightgray;
+}
+nav p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*------------------------ CAMBIOS EN LAS CAJAS --------------------------------------------------*/
+
+.box { /* Aquí estan los cambios que hemos hecho en las cajas, como el borde y alinearlas */
+    width: 200px;
+    height: 50px;
+    background-color: lightgray;
+    border: 5px solid black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 0 ;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-left: 10px ;
+}
+
+.box.active { /* Cambia el color de fondo de la caja cuando el usuario la pulsa, además de ponerla en negrita */
+    background-color: red;
+    font-weight: bold;
+    font-family: "Roboto Light";
+    font-color: antiquewhite;
+}
+
+.box a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+}
+
+
+/*------------------------ CAMBIOS EN LA CLASE CONTENIDO --------------------------------------------------*/
+
+.contenido {
+    flex: 1;
+    background-color: #00FFFF;
+    padding: 20px;
+    margin: 0; /* Elimina margen para que toque los bordes */
+}
+
+.seccion-articulo {
+    background-color: #00FFFF;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.seccion-articulo h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.seccion-articulo p {
+    font-size: 16px;
+    color: #000;
+    margin: 5px 0;
+}
+
+
+
+/*------------------------ CAMBIOS EN LA CLASE COMPARATIVA-ARTICULOS --------------------------------------------------*/
+
+.resultados-comparacion {
+    background-color: #f5e9db;
+    padding: 20px;
+    margin: 0; /* Elimina margen para que toque los bordes */
+    border-radius: 0;
+    color: black;
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+.resultados-comparacion h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+
+.comparativa-articulos h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center; /* Center the text */
+}
+
+.campo-comparacion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.articulo-box {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+/*------------------------ CAMBIOS EN EL FOOTER --------------------------------------------------*/
+
+footer { /* Cambios en el footer para que el fondo sea verde, y tuvimos que añadir el color white porque al ponerlo en verde no se veía el símbolo de autenticación */
+    background-color: green;
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

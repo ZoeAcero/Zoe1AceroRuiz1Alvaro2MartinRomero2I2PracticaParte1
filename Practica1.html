@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="decoracion.css">
+</head>
+
+<body>
+<header>
+
+    <!-- Aquí esta el header de la página, donde se muestra el título de la página y los nombres de los autores además de la foto de la universidad -->
+
+    <div>
+        <h1> Comparador de Artículos </h1>
+        <h2> Zoe Acero </h2>
+        <h2> Álvaro Martín </h2>
+        <img src="images.jpg">
+
+    </div>
+
+</header>
+<main>
+
+    <!-- Este nav contiene el menú de opciones, al principio lo pusimos como div, pero pensamos que sería mejor nav al ser botones para "navegar"-->
+
+    <nav>
+    <p id="EXAMEN"> EXAMEN: Zoe Acero Ruiz, 156708 </p> <br>
+    <div class="box"><a href="https://uax.es">UAX</a></div>
+    <div class="box">Mi Blog</div>
+    <div class="box">Mi Horario</div>
+    <div class="box"><a href="https://campus.uax.es">La Universidad</a></div>
+    <div class="box">Otros</div>
+</nav>
+
+
+
+
+    <!-- Este div contiene el contenido de la pagina-->
+
+    <div class="contenido">
+        <div class="seccion-articulo">
+            <h2>Artículo 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Curabitur nec turpis nec nulla consequat tristique.</p>
+        </div>
+        <div class="seccion-articulo">
+            <h2>Artículo 2</h2>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="resultados-comparacion">
+        <h2>Resultados de la Comparación</h2>
+        <div class="comparativa-articulos">
+            <h3>Comparativa de Artículos</h3>
+            <div class="campo-comparacion">
+                <div class="articulo-box">
+                    <label for="articuloA">Artículo A:</label>
+                    <input type="text" id="articuloA" value="Valor A">
+                </div>
+                <div class="articulo-box">
+                    <label for="articuloB">Artículo B:</label>
+                    <input type="text" id="articuloB" value="Valor B">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<!-- Aquí encontramos el footer de la página, donde se muestra el nombre de la universidad y un enlace a su página web-->
+
+<footer>
+    <div>
+        &copy; <a href = "https://www.uax.com"> Universidad Alfonso X el Sabio </a>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<!-- Hemos puesto un script para que al hacer click en una caja se ponga en color rojo, y que cuando cambies en el menú de opciones se quite el color rojo de la caja anterior-->
+
+<script>
+    document.querySelectorAll('.box').forEach(box => {
+        box.addEventListener('click', () => {
+            document.querySelectorAll('.box').forEach(b => b.classList.remove('active'));
+            box.classList.add('active');
+
+        });
+    });
+</script>
+
+</body>
+</html>
