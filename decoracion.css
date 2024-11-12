@@ -111,15 +111,15 @@ nav p{
 
 
 /*------------------------ CAMBIOS EN LA CLASE COMPARATIVA-ARTICULOS --------------------------------------------------*/
-
 .resultados-comparacion {
     background-color: #f5e9db;
-    padding: 20px;
+    padding: 40px;
     padding-left: 10px;
     margin: 0; /* Elimina margen para que toque los bordes */
-    border-radius: 0;
+    border-radius: 5px;
     color: black;
     font-family: Arial, sans-serif;
+    text-align: left;
 
 }
 
@@ -127,8 +127,14 @@ nav p{
 
 .resultados-comparacion h2 {
     font-size: 24px;
-    margin-bottom: 30px;
-    text-align: right;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-top: 0;
+    margin-left: 0;
+    position: relative;
+    top: -20px;
+    width:100%;
+    margin-top: 25px
 }
 
 
@@ -141,7 +147,8 @@ nav p{
 .campo-comparacion {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
+    align-items: center;
 }
 
 .articulo-box {
@@ -151,11 +158,12 @@ nav p{
     border: 1px solid #ccc;
     border-radius: 3px;
     background-color: #f5e9db;
+    width: 400px;
+    height: 20px;
+    align-items:center;
+    margin:0px 10px;
+
 }
-
-
-
-
 
 /*------------------------ CAMBIOS EN EL FOOTER --------------------------------------------------*/
 
