@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="decoracion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,17 +24,14 @@
 <main>
 
     <!-- Este nav contiene el menú de opciones, al principio lo pusimos como div, pero pensamos que sería mejor nav al ser botones para "navegar"-->
-
     <nav>
-    <p id="EXAMEN"> EXAMEN: Zoe Acero Ruiz, 156708 </p> <br>
-    <div class="box"><a href="https://uax.es">UAX</a></div>
-    <div class="box">Mi Blog</div>
-    <div class="box">Mi Horario</div>
-    <div class="box"><a href="https://campus.uax.es">La Universidad</a></div>
-    <div class="box">Otros</div>
-</nav>
-
-
+        <p id="EXAMEN"> EXAMEN: Zoe Acero Ruiz, 156708 </p> <br>
+        <a href="https://uax.es" class="box" tabindex="0">UAX</a>
+        <div class="box" tabindex="0">Mi Blog</div>
+        <div class="box" tabindex="0">Mi Horario</div>
+        <a href="https://campus.uax.es" class="box" tabindex="0">La Universidad</a>
+        <div class="box" tabindex="0">Otros</div>
+    </nav>
 
 
     <!-- Este div contiene el contenido de la pagina-->
@@ -81,23 +79,5 @@
     </div>
 
 </footer>
-
-
-
-
-
-
-<!-- Hemos puesto un script para que al hacer click en una caja se ponga en color rojo, y que cuando cambies en el menú de opciones se quite el color rojo de la caja anterior-->
-
-<script>
-    document.querySelectorAll('.box').forEach(box => {
-        box.addEventListener('click', () => {
-            document.querySelectorAll('.box').forEach(b => b.classList.remove('active'));
-            box.classList.add('active');
-
-        });
-    });
-</script>
-
 </body>
 </html>
