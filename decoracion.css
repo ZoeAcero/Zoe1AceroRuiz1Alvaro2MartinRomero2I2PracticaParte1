@@ -4,7 +4,7 @@ header {
     background-color: green;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 header div {
@@ -14,13 +14,14 @@ header div {
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
+    font-weight: bold;
 }
 
 header div h1, header div h2 {
     color: white;
     align-self: flex-start;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 
