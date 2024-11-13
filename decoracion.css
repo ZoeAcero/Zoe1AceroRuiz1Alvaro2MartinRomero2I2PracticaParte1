@@ -1,9 +1,11 @@
 /*------------------------- CAMBIOS EN EL HEADER ------------------------------------------------*/
+*{
+    font-family: 'Roboto',light;
 
+}
 header {
     background-color: green;
     padding: 10px;
-    font-family: 'Roboto',light;
     font-weight: bold;
 }
 
@@ -20,7 +22,6 @@ header div {
 header div h1, header div h2 {
     color: white;
     align-self: flex-start;
-    font-family: 'Roboto',light;
     font-weight: bold;
 }
 
@@ -33,7 +34,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Roboto',light;
     font-weight: 300;
 }
 
@@ -49,13 +49,15 @@ main {
 nav {
     flex: 0 0 250px;
     background-color: lightgray;
-    font-family: 'Roboto', light;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 nav p {
+
     padding-left: 10px;
     padding-right: 10px;
+    padding-top:20px;
+
 }
 
 
@@ -73,7 +75,6 @@ nav p {
     margin-left: 20px;
     margin-right: 10px;
     padding-left: 10px;
-    font-family: 'Roboto',light;
     font-weight: 300;
     text-decoration: none;
     color: inherit;
@@ -98,8 +99,7 @@ nav p {
     background-color: #00FFFF;
     padding: 20px;
     margin: 0;
-    font-family: 'Roboto',light;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 .seccion-articulo {
@@ -113,7 +113,6 @@ nav p {
     font-size: 24px;
     color: #000;
     margin-bottom: 10px;
-    font-family: 'Roboto',light;
     font-weight: bold;
 }
 
@@ -121,8 +120,7 @@ nav p {
     font-size: 16px;
     color: #000;
     margin: 5px 0;
-    font-family: 'Roboto',light;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 /*------------------------ CAMBIOS EN LA CLASE COMPARATIVA-ARTICULOS --------------------------------------------------*/
@@ -134,7 +132,6 @@ nav p {
         margin: 0;
         border-radius: 5px;
         color: black;
-        font-family: 'Roboto',light;
         font-weight: 300;
         text-align: left;
 
@@ -150,17 +147,16 @@ nav p {
         top: -20px;
         width: 100%;
         margin-top: 25px;
-        font-family: 'Roboto',light;
         font-weight: bold;
 
     }
 
-    .comparativa-articulos h3 {
-        font-size: 20px;
+    .comparativa-articulos h2{
+        font-size: 24px;
         margin-bottom: 30px;
         text-align: center;
-        font-family: 'Roboto',light;
         font-weight: bold;
+        padding-top: 10px;
     }
 
     .campo-comparacion {
@@ -181,7 +177,6 @@ nav p {
         height: 20px;
         align-items: center;
         margin: 0px 10px;
-        font-family: 'Roboto',light;
         font-weight: 300;
     }
 /*------------------------ CAMBIOS EN EL FOOTER --------------------------------------------------*/
@@ -191,7 +186,6 @@ footer {
     color: white;
     padding: 35px;
     text-align: center;
-    font-family: 'Roboto',light;
     font-weight: 300;
     margin-top: auto;
 }
